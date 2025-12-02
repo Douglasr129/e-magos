@@ -1,0 +1,53 @@
+<Solution>
+  <Folder Name="/docker/" />
+  <Folder Name="/docs/" />
+  <Folder Name="/k8s/" />
+  <Folder Name="/src/" />
+  <Folder Name="/src/ApiGateway/" />
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/AuthService/">
+    <Project Path="src/Services/AuthService/Auth.API/Auth.API.csproj" />
+    <Project Path="src/Services/AuthService/Auth.Application/Auth.Application.csproj" />
+    <Project Path="src/Services/AuthService/Auth.Domain/Auth.Domain.csproj" />
+    <Project Path="src/Services/AuthService/Auth.Infrastructure/Auth.Infrastructure.csproj" />
+    <Project Path="src/Services/AuthService/Auth.Tests/Auth.Tests.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/CatalogService/">
+    <Project Path="src/Services/CatalogService/Catalog.API/Catalog.API.csproj" />
+    <Project Path="src/Services/CatalogService/Catalog.Application/Catalog.Application.csproj" />
+    <Project Path="src/Services/CatalogService/Catalog.Domain/Catalog.Domain.csproj" />
+    <Project Path="src/Services/CatalogService/Catalog.Infrastructure/Catalog.Infrastructure.csproj" />
+    <Project Path="src/Services/CatalogService/Catalog.Tests/Catalog.Tests.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/NotificationService/">
+    <Project Path="src/Services/NotificationService/Notification.API/Notification.API.csproj" />
+    <Project Path="src/Services/NotificationService/Notification.Application/Notification.Application.csproj" />
+    <Project Path="src/Services/NotificationService/Notification.Domain/Notification.Domain.csproj" />
+    <Project Path="src/Services/NotificationService/Notification.Infrastructure/Notification.Infrastructure.csproj" />
+    <Project Path="src/Services/NotificationService/Notification.Tests/Notification.Tests.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/OrderService/">
+    <Project Path="src/Services/OrderService/Order.API/Order.API.csproj" />
+    <Project Path="src/Services/OrderService/Order.Application/Order.Application.csproj" />
+    <Project Path="src/Services/OrderService/Order.Domain/Order.Domain.csproj" />
+    <Project Path="src/Services/OrderService/Order.Infrastructure/Order.Infrastructure.csproj" />
+    <Project Path="src/Services/OrderService/Order.Tests/Order.Tests.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/PaymentService/">
+    <Project Path="src/Services/PaymentService/Payment.API/Payment.API.csproj" />
+    <Project Path="src/Services/PaymentService/Payment.Application/Payment.Application.csproj" />
+    <Project Path="src/Services/PaymentService/Payment.Domain/Payment.Domain.csproj" />
+    <Project Path="src/Services/PaymentService/Payment.Infrastructure/Payment.Infrastructure.csproj" Id="957a7bf1-7b9f-4895-9af8-3e89f70dadb8" />
+    <Project Path="src/Services/PaymentService/Payment.Tests/Payment.Tests.csproj" Id="88e6474c-6d2c-4a55-bd23-b99542171d99" />
+  </Folder>
+  <Folder Name="/src/Services/ReportService/">
+    <Project Path="src/Services/ReportService/Report.API/Report.API.csproj" Id="cb30dc51-dded-4786-9f48-53c5a217fa6a" />
+    <Project Path="src/Services/ReportService/Report.Application/Report.Application.csproj" Id="94afc030-31f1-4510-b559-b4809b755b29" />
+    <Project Path="src/Services/ReportService/Report.Domain/Report.Domain.csproj" Id="813c83ab-bfcb-4fdb-abe2-f0463ce40172" />
+    <Project Path="src/Services/ReportService/Report.Infrastructure/Report.Infrastructure.csproj" Id="2be9de95-a648-4013-a5de-eb18e20db641" />
+    <Project Path="src/Services/ReportService/Report.Tests/Report.Tests.csproj" Id="25666920-bc42-417a-bd49-d45ef36e1ba8" />
+  </Folder>
+  <Folder Name="/src/SharedKernel/">
+    <Project Path="src/SharedKernel/Core/Core.csproj" Id="147c9af8-50f5-4c55-8a11-7115704d35c7" />
+  </Folder>
+</Solution>
