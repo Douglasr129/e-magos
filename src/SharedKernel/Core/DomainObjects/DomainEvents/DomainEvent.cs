@@ -8,7 +8,7 @@ namespace Core.DomainObjects.DomainEvents
     /// outros componentes do sistema (ou microsserviços) podem reagir.
     /// </summary>
     [NotMapped]
-    public abstract record DomainEvent(DateTimeOffset OccurredOn)
+    public abstract record DomainEvent(DateTimeOffset OccurredOn) : IDomainEvent
     {
         // Nota: Um 'record' já gera automaticamente o construtor, 
         // as propriedades, e implementa Equals/GetHashCode (igualdade por valor)

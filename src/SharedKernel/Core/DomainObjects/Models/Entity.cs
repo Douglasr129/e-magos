@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using Core.DomainObjects.DomainEvents;
+using System.Globalization;
 using System.Text;
 
 namespace Core.DomainObjects.Models
@@ -38,6 +39,40 @@ namespace Core.DomainObjects.Models
             Id = Guid.NewGuid();
             RegistrationDate = DateTime.Now;
         }
+
+        /// <summary>
+        /// Lista de eventos de domínio associados à entidade.
+        /// </summary>
+        protected List<DomainEvent> _domainEvents = new();
+        public IReadOnlyCollection<DomainEvent> DomainEvents => _domainEvents.AsReadOnly();
+
+        /// <summary>
+        /// Adiciona um evento de domínio à entidade.
+        /// </summary>
+        /// <param name="eventItem">Evento de domínio.</param>
+        public void AddDomainEvent(DomainEvent eventItem)
+        {
+            _domainEvents.Add(eventItem);
+        }
+
+        /// <summary>
+        /// Remove um evento de domínio da entidade.
+        /// </summary>
+        /// <param name="eventItem">Evento de domínio.</param>
+        public void RemoveDomainEvent(DomainEvent eventItem)
+        {
+            _domainEvents.Remove(eventItem);
+        }
+
+        /// <summary>
+        /// Limpa todos os eventos de domínio.
+        /// </summary>
+        public void ClearDomainEvents()
+        {
+            _domainEvents.Clear();
+        }
+
+
         /// <summary>
         /// Determina se o objeto especificado é igual à instância atual.
         /// </summary>

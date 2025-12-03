@@ -1,4 +1,6 @@
-﻿namespace Core.DomainObjects.Interfaces
+﻿using Core.DomainObjects.DomainEvents;
+
+namespace Core.DomainObjects.Interfaces
 {
     /// <summary>
     /// Interface marcadora para a Raiz de Agregado (Aggregate Root) no Domain-Driven Design (DDD).
@@ -9,7 +11,7 @@
     /// </remarks>
     public interface IAggregateRoot
     {
-        IReadOnlyCollection<DomainEvents.DomainEvent> Events { get; }
+        IReadOnlyCollection<IDomainEvent> Events { get; }
         void ClearEvents();
     }
 }

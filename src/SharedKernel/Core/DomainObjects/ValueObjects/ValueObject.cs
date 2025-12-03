@@ -40,5 +40,10 @@
                 .Aggregate(1, (hash, obj) =>
                     // Multiplica o hash atual por um primo (23) e adiciona o hash do componente
                     hash * 23 + (obj?.GetHashCode() ?? 0));
+
+
+        public static bool operator ==(ValueObject a, ValueObject b) => a?.Equals(b) ?? b is null;
+        public static bool operator !=(ValueObject a, ValueObject b) => !(a == b);
+
     }
 }
