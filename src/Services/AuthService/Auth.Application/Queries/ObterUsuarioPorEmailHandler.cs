@@ -1,6 +1,6 @@
 ﻿namespace Auth.Application.Queries
 {
-    internal class ObterUsuarioPorEmailQuery
+    internal class ObterUsuarioPorEmailHandler
     {
     }
 }

@@ -1,10 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Auth.Application.DTOs;
+using MediatR;
 
 namespace Auth.Application.Commands
 {
-    internal class LoginUsuarioCommand
+    /// <summary>
+    /// Command para autenticar um usuário.
+    /// </summary>
+    public class LoginUsuarioCommand : IRequest<AuthResultDTO>
     {
+        /// <summary>
+        /// E-mail do usuário.
+        /// </summary>
+        public required string Email { get; set; }
+
+        /// <summary>
+        /// Senha do usuário.
+        /// </summary>
+        public required string Senha { get; set; }
     }
+
 }

@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Auth.Domain.Entities;
 
 namespace Auth.Application.Interfaces
 {
-    internal interface IAuthService
+    /// <summary>
+    /// Serviço de autenticação responsável por gerar tokens.
+    /// </summary>
+    public interface IAuthService
     {
+        string GerarToken(Usuario usuario);
     }
+
 }

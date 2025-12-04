@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Auth.Application.DTOs
+﻿namespace Auth.Application.DTOs
 {
-    internal class TokenDTO
+    /// <summary>
+    /// DTO para representar resultado de autenticação.
+    /// </summary>
+    public class AuthResultDTO
     {
+        public Guid UsuarioId { get; set; }
+        public required string Email { get; set; }
+        public required string Token { get; set; }
     }
+
 }
