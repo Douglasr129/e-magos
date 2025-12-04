@@ -1,5 +1,7 @@
 <Solution>
-  <Folder Name="/docker/" />
+  <Folder Name="/docker/">
+    <File Path="docker/docker-compose.yml" />
+  </Folder>
   <Folder Name="/docs/" />
   <Folder Name="/k8s/" />
   <Folder Name="/src/" />
