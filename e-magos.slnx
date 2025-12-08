@@ -8,7 +8,7 @@
   <Folder Name="/src/ApiGateway/" />
   <Folder Name="/src/Services/" />
   <Folder Name="/src/Services/AuthService/">
-    <Project Path="src/Services/AuthService/Auth.API/Auth.API.csproj" />
+    <Project Path="src/Services/AuthService/Auth.API/Auth.API.csproj" Id="5a35a38a-d539-4f28-a8e9-72dfc62a3702" />
     <Project Path="src/Services/AuthService/Auth.Application/Auth.Application.csproj" />
     <Project Path="src/Services/AuthService/Auth.Domain/Auth.Domain.csproj" />
     <Project Path="src/Services/AuthService/Auth.Infrastructure/Auth.Infrastructure.csproj" />
