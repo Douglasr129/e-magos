@@ -40,7 +40,7 @@ namespace Auth.Infrastructure.Data
                 {
                     e.Property(p => p.Address).HasColumnName("Email").IsRequired();
                 });
-                entity.OwnsOne(u => u.Senha, s =>
+                entity.OwnsOne(u => u.SenhaHash, s =>
                 {
                     s.Property(p => p.Valor).HasColumnName("Senha").IsRequired();
                 });

@@ -11,7 +11,7 @@ namespace Auth.Application.AutoMapper
         {
             CreateMap<UsuarioDTO, Usuario>()
                 .ForMember(dest => dest.Email, opt => opt.MapFrom(src => new Email(src.Email)))
-                .ForMember(dest => dest.Senha, opt => opt.Ignore());
+                .ForMember(dest => dest.SenhaHash, opt => opt.Ignore());
         }
     }
 }

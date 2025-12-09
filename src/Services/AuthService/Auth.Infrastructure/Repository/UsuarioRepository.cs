@@ -37,7 +37,9 @@ namespace Auth.Infrastructure.Repository
             _context.Usuarios.Update(usuario);
         }
 
+#pragma warning disable CA1816 // Os métodos Dispose devem chamar SuppressFinalize
         public void Dispose()
+#pragma warning restore CA1816 // Os métodos Dispose devem chamar SuppressFinalize
         {
             _context?.Dispose();
         }
