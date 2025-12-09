@@ -2,28 +2,13 @@ using Asp.Versioning.ApiExplorer;
 using Core.Configuration.APIConfiguration;
 using Core.Notifications.Interfaces;
 using Core.Notifications.Service;
-using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options =>
-{
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Description = "Insira o token JWT desta maneira: Bearer {seu token}",
-        Name = "Authorization",
-        Scheme = "Bearer",
-        BearerFormat = "JWT",
-        In = ParameterLocation.Header,
-        Type = SecuritySchemeType.ApiKey
-    });
-    options.AddSecurityRequirement(docment => new OpenApiSecurityRequirement
-    {
-        [new OpenApiSecuritySchemeReference("Bearer", docment)] = [],
-    });
-});
+builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerConfig();
 builder.Services.ConfigureOptions<ConfigureSwaggerOptions>();
 builder.Services.AddScoped<INotifier, Notifier>();
 

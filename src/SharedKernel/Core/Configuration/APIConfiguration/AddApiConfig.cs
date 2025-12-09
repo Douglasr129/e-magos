@@ -11,8 +11,6 @@ namespace Core.Configuration.APIConfiguration
         public static IServiceCollection AddApiConfig(this IServiceCollection services)
         {
             services
-                .AddScoped<INotifier, Notifier>()
-                .AddScoped<IUsuarioContextoProvider, UsuarioContextoProvider>()
                 .AddControllers()
                 .ConfigureApiBehaviorOptions(options =>
                 {
