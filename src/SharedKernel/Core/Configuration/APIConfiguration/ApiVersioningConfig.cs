@@ -39,7 +39,7 @@ namespace Core.Configuration.APIConfiguration
                     }
                     options.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None); // Controla a expansão dos docs
                     options.DisplayRequestDuration(); // Exibe o tempo de resposta nas solicitações
-
+                    options.EnablePersistAuthorization();
                 });
             return app;
         }

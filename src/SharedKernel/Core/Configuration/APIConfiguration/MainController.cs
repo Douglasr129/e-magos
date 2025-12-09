@@ -8,19 +8,12 @@ using System.Net;
 namespace Core.Configuration.APIConfiguration
 {
     [ApiController]
-    public abstract class MainController : ControllerBase
+    public abstract class MainController(INotifier notificador) : ControllerBase
     {
-        private readonly INotifier _notifier;
+        private readonly INotifier _notifier = notificador;
 
-        private readonly IUsuarioContextoProvider _User;
         protected Guid UsuarioId { get; set; }
         protected bool UsuarioAutenticado { get; set; }
-
-        protected MainController(INotifier notificador, IUsuarioContextoProvider User)
-        {
-            _notifier = notificador;
-            _User = User;
-        }
 
         protected bool OperacaoValida()
         {

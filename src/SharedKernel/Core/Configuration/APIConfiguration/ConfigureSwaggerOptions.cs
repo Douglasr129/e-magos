@@ -30,9 +30,9 @@ namespace Core.Configuration.APIConfiguration
             var info = new OpenApiInfo()
             {
 
-                Title = "KitEasy - Api",
+                Title = "E-Magos - Api",
                 Version = $"v{description.ApiVersion}",
-                Description = "API para gestão de imóveis de alugueis.",
+                Description = "API para gestão de Lojas.",
                 Contact = new OpenApiContact
                 {
                     Name = "Douglas Rodrigues",
